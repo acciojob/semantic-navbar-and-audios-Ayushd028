@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Section</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-	<nav>
-		<ul>
-			<li>
-				<a href=#music1> Mussic 1 </a>
-			</li>
-			<li>
-				<a href=#music2> Mussic 2 </a>
-			</li>
-			<li>
-				<a href=#music3> Mussic 3 </a>
-			</li>
-		</ul>
-	</nav>
-	<h1>Audio Section</h1>
-	<h3>The Neverwritten Role Playing Game.mp3</h3>
-	<audio controls src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" id="music1"> Your browser does not support the audio element. </audio>
-	<h3>The Neverwritten Role Playing Game.mp3</h3>
-	<audio controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" id="music2"> Your browser does not support the audio element. </audio>
-	<h3>The Neverwritten Role Playing Game.mp3</h3>
-	<audio controls src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" id="music3"> Your browser does not support the audio element. </audio>
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#music1">Music 1</a></li>
+            <li><a href="#music2">Music 2</a></li>
+            <li><a href="#music3">Music 3</a></li>
+        </ul>
+    </nav>
+
+    <h1>Audio Section</h1>
+
+    <!-- Audio Files -->
+    <h3>Music 1: The Neverwritten Role Playing Game</h3>
+    <audio controls id="music1">
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Music 2: Lepidoptera</h3>
+    <audio controls id="music2">
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Music 3: Paza - Moduless</h3>
+    <audio controls id="music3">
+        <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <script type="text/javascript" src="./script.js"></script>
 
 </body>
